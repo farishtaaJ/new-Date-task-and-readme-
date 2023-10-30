@@ -16,7 +16,6 @@ function monthName (num)
 console.log(monthName(12));
 
 
-
 //task 2 
 function timeForMilkAndCookies (today)
 {
@@ -32,8 +31,7 @@ function timeForMilkAndCookies (today)
 console.log(timeForMilkAndCookies(new Date (2023,11,24)));
 
 
-
-// task 3  // первый вариант 
+// task 3 
 function getDate (num)
 {
     let arr = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
@@ -42,8 +40,6 @@ function getDate (num)
     return arr[date.getDay()] 
 }
 console.log(getDate("12/07/2022"));
-
-
 
 
 // homework  task 1 
@@ -63,9 +59,6 @@ function getDates (num,num1)
 }
 console.log(getDates(new Date('2023-12-31'),new Date('2023-10-26')))
 
-
-
-
 // task 2 
 function getTimes (num)
 {  
@@ -78,8 +71,6 @@ function getTimes (num)
 console.log(getTimes(new Date()));
 
 
-
-
 //task 3 первый вариант 
 function currentMonth ()
 {
@@ -87,9 +78,7 @@ function currentMonth ()
    let res = day.getDate()
    return res 
 }
-console.log(currentMonth(("2023-09-20")));
-
-
+console.log(currentMonth(("2023-09-20")))
 
 // второй вариант 
 function currentMonth (num)
@@ -101,18 +90,13 @@ function currentMonth (num)
 console.log(currentMonth("2023-09-20"));
 
 
-
-
-
-
 // task 4 первый вариант 
 function leap (num)
 {
-    let date = new Date (num, 1, 29) // первый параметр, параментр функции // втрой 1 фувраля и третьй 29 февраля
+    let date = new Date (num, 1, 29) // первый параметр, параментр функции // втрой 1 февраля и третьй 29 февраля
     return date.getDate() === 29
 }
 console.log(leap(1933));
-
 
 // второй вариант 
 function leap (num)
