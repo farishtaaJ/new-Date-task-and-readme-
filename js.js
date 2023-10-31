@@ -71,23 +71,15 @@ function getTimes (num)
 console.log(getTimes(new Date()));
 
 
-//task 3 первый вариант 
-function currentMonth ()
+//task 3
+function currentMonth (day)
 {
-   let day = new Date ()
-   let res = day.getDate()
-   return res 
-}
-console.log(currentMonth(("2023-09-20")))
+   let month = day.getMonth()
+   let year = day.getFullYear()
 
-// второй вариант 
-function currentMonth (num)
-{
-    num = new Date ()
-    let res = num.getDate()
-    return res 
+   return new Date (year,month + 1, 0).getDate() 
 }
-console.log(currentMonth("2023-09-20"));
+console.log(currentMonth(new Date ("2023-09-20")))
 
 
 // task 4 первый вариант 
